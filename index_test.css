@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html, body { height: 100% }
+div { position: relative }
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+/*==========================
+indicates no border around any image 
+============================*/
+body img {
+  border: 0px;
+  text-decoration: none;
+}
+/* ================================= 
+Page container - margins auto center the container on the page 
+=====================================*/
+#container {
+  padding: 0;
+  max-width: 100%;
+  max-height: 0;
+}
+/*====================== 
+styles for top banner 
+========================*/
+#banner {
+  position: inherit;
+  margin-right: calc(25% + 1px);
+  height: 100%;
+  padding: 1%;
+  background-repeat: no-repeat;
+  color: black;
+  column-gap: 0px;
+}
+
+#banner h {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 0.8em;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#banner p {
+  font-family: arial;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+
+
+/*====================== 
+styles for main content area 
+=========================*/
+#content {
+  position: relative;
+  padding-right: calc(25% - 1px);
+  height: auto;
+  margin-top: 0;
+}
+/*======================
+content area list items
+========================*/
+div.spacemap-img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align:middle;    
+}
+
+div.spacemap-img img {
+  width: 38vw;
+}
+
+div.spacemap-flag{
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 39vw;
+  height: 35vw;
+  top: 0;
+  left: 17.8%;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*======================
+pins
+========================*/
+.pins-style{
+  position: absolute;
+  overflow: hidden;
+}
+
+.pins-style-door{
+  left: 2%;
+  top: 33%;
+  bottom: 0;
+  width: 15%;
+  height: 14%;
+  background-color: #FF0;
+  cursor: url("https://www.collinsdictionary.com/images/full/key_69270748_1000.jpg"), auto;
+}
+
+.pins-style-kitchen{
+  left: 4%;
+  top: 4%;
+  bottom: 0;
+  width: 34%;
+  height: 15%;
+  background-color: #FF0;
+}
+.pins-style-desk{
+  left: 56%;
+  top: 21%;
+  bottom: 0;
+  width: 26%;
+  height: 21%;
+  background-color: #FF0;
+}
+.pins-style-bookcase{
+  left: 87%;
+  top: 13%;
+  bottom: 0;
+  width: 6%;
+  height: 18%;
+  background-color: #FF0;
+}
+.pins-style-stand{
+  left: 85%;
+  top: 41%;
+  bottom: 0;
+  width: 7%;
+  height: 8%;
+  border-radius: 100%;
+  background-color: #FF0;
+}
+.pins-style-sofa{
+  left: 80%;
+  top: 55%;
+  width: 11%;
+  height: 11%;
+  transform: rotate(166deg);
+  background-color: #FF0;
+}
+.pins-style-window{
+  left: 94.5%;
+  bottom: 1%;
+  width: 3.5%;
+  height: 58%;
+  background-color: #FF0;
+}
+.pins-style-bed{
+  left: 35%;
+  width: 47%;
+  height: 24%;
+  bottom: 3%;
+  background-color: #FF0;
+}
+.pins-style-closet{
+  left: 35%;
+  width: 33%;
+  height: 8%;
+  bottom: 26%;
+  background-color: #FF0;
+}
+.pins-style-sink{
+  left: 4%;
+  top: 66%;
+  width: 7.5%;
+  height: 12%;
+  background-color: #FF0;
+}
+
+.pins-style-shower{
+  left: 4%;
+  bottom: 4%;
+  width: 16%;
+  height: 16%;
+  background-color: #FF0;
+}
+
+.pins-style a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #FF0;
+}
+
+/* ***********************************
+Navigation Bar - Right hand side 
+************************************* */
+#rightcol {
+  height: auto;
+  width: 25%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border-left: 10px solid #000;
+  float: right;
+}
+
+#rightcol p{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+  color: black;
+}
+#rightcol ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0; /*bottom spacing between each UL and rest of content*/
+}
+#rightcol ul li {
+  border-top: solid 1px black;
+  
+}
+#rightcol ul li b {
+  font-family: Times New Roman;;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.7em;
+  color: black;
+  margin: 0;
+}
+
+#rightcol ul li a {
+  font-family: Times New Roman;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-stretch: condensed;
+  color: #000000;
+  display: block;
+  padding: 10px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: auto;
+  text-decoration: none;
+}
+#rightcol ul li a:visited {
+  color: #000000;
+}
+#rightcol ul li a:hover{
+  background: black;
+  color: white;
+}
+#rightcol ul li b:hover {
+  background: black;
+  color: white;
+}
+
+.heading {
+  font-family: 'Della Respira', serif;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0; /*bottom spacing between header and rest of content*/;
+  text-transform: uppercase;
+  padding: 7px 0 7px 15px;
+  font-size: .9em;
+}
+
+#footer {
+  postion: fixed;
+  bottom: 0;
+  padding: 10px;
+  border-top: 1px solid #242F24;
+  clear: both;
+  text-align: center;
+}
+
+#footer p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*================== 
+general styles 
+=================*/
+hr {
+  width: 90%;
+  text-align: center;
+  background-color: #004145;
+  height: 5px;
+}
+/* =================
+Styles for heading tags 
+=============== */
+h1, h2, h3, h4 {
+  color: #485E48; /*dk green*/;
+  background-color: inherit;
+  font-family: 'Della Respira', serif;
+}
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: .9em;
+}
+h4 {
+  font-size: .9em;
+}
+/*================
+general styles
+==============*/
+.center {
+  text-align: center;
+}
+.no-margin {
+  margin: 0px;
+}
+.smtxt {
+  font-size: small;
+}
+/* ============
+floats images to right or left or centered
+============*/
+.imgrgt {
+  float: right;
+  padding: 7px;
+}
+.imglft {
+  float: left;
+  padding: 7px;
+}
+.imgctr {
+  display: block;
+  margin: 0px auto;
+}
+
+/*====================
+all site links
+=====================*/
+a:link {
+  font-weight: 500;
+  color: #004145;
+  background: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  font-weight: 500;
+  color: #000000;
+  background: transparent;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+a:active {
+  font-weight: 500;
+  text-decoration : underline;
+  color: #000000;
+}
+
+
+
+
+

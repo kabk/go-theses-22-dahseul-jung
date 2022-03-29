@@ -16,17 +16,21 @@ body > div {
 }
 
 #wrapper{
-  position: sticky;
   display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 #footnote {
-  flex: 0 0 20%;
+  display: block;
+  position: fixed;
+  float: left;
+  width: 20%;
   height: 100%;
+  overflow-y: scroll;
   padding: 1.5em;
   border-right: 1px solid #000;
-  font-family: Times New Roman;
-  font-size: 1.4em;
 }
 
 #footnote .info{
@@ -35,9 +39,13 @@ body > div {
 }
 
 #contents {
+  position: fixed;
+  float: right;
+  width: 80%;
   padding: 1.5em;
   columns: 2;
   column-gap: 50px;
+  overflow-y: scroll;
 }
 
 #contents h1 {
@@ -54,7 +62,6 @@ body > div {
   font-family: Times New Roman;
   font-size: 1.3em;
 }
-
 
 
 

@@ -14,17 +14,9 @@ body > div {
   vertical-align: top;
 }
 
-
 #header {
   width: 430px;
   border-right: 1px solid #000;
-}
-
-#header h1 {
-  margin: 15px;
-  width: 350px;
-  font-family: helvetica;
-  font-size: 0.8em;
 }
 
 #header .menubar {
@@ -97,8 +89,8 @@ div.spacemap-img{
 }
 
 div.spacemap-img img{
-  width: 40vw;
-  height: 40vw;
+  width: 65vw;
+
 }
 
 div.spacemap{
