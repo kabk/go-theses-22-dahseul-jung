@@ -1,0 +1,67 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html, body { height: 100% }
+div { position: relative }
+body > div {
+  height: 100%;
+  margin-right: -4px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#wrapper{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#footnote {
+  display: block;
+  position: fixed;
+  float: left;
+  width: 20%;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 1.5em;
+  border-right: 1px solid #000;
+}
+
+#footnote .info{
+  font-family: courier;
+  font-size: 0.5em;
+}
+
+#contents {
+  position: fixed;
+  float: right;
+  width: 80%;
+  padding: 1.5em;
+  columns: 2;
+  column-gap: 50px;
+  overflow-y: scroll;
+}
+
+#contents h1 {
+  column-span: all;
+  text-align: center;
+  font-family: Times New Roman;
+  font-weight: normal;
+  font-style: italic;
+  font-size:  1.7em;
+}
+
+#contents p {
+
+  font-family: Times New Roman;
+  font-size: 1.3em;
+}
+
+
+
