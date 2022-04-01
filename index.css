@@ -668,9 +668,8 @@ div.spacemap-flag{
   top: 48%;
   height: 44%;
   width: 100%;
-  border-left: solid 8px black;
-  border-right: solid 8px black;
-  border-top: solid 8px black;
+  border: solid 8px black;
+
   float: left;
 }
 
