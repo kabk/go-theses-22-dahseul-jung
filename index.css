@@ -87,6 +87,17 @@ styles for main content area
   height: auto;
 }
 
+div. click {
+  position: relative;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 0.5em;
+  background-color: black;
+  color: white;
+  padding: 2%;
+}
+}
+
 /*======================
 content area list items
 ========================*/
@@ -316,7 +327,7 @@ Navigation Bar - Right hand side
   margin-top: 2%;
   margin-right: 2%;
   padding-bottom: 2%;
-  font-family: courier;
+  font-family: inconsolata;
   font-size: 0.8em;
   line-height: 110%;
   border-bottom: 2px dashed; #000;
@@ -464,6 +475,7 @@ a:active {
   margin:0;
   padding-top: 3%;
   padding-left: 3%;
+  padding-bottom: 0;
   text-align: left;
 }
 
@@ -477,7 +489,6 @@ a:active {
   height: 70%;
   width: 100%;
   padding: 0;
-  padding-top: 15%;
   height: auto;
 }
 
@@ -486,6 +497,7 @@ div.spacemap-img {
   width: 100%;
   height: 100%;
 }
+
 
 div.spacemap-img img{
   display: block;
@@ -498,9 +510,8 @@ div.spacemap-img img{
 div.spacemap-flag{
   width: 52vw;
   height: 47vw;
-  top: 28%;
+  top: 8.5%;
   left: 24%;
-  background-color: yellow;
 }
 
 .pins-style{
@@ -510,12 +521,11 @@ div.spacemap-flag{
 }
 
 .pins-style-door{
-  left: 0.5%;
-  top: 32.5%;
+  left: 0%;
+  top: 31.8%;
   bottom: 0;
   width: 13.5%;
   height: 12.7%;
-  border-radius: 5% 90% 0 0;
 }
 
 .pins-style-door:hover{
@@ -523,55 +533,47 @@ div.spacemap-flag{
 }
 
 .pins-style-kitchen{
-  left: 2.5%;
-  top: 2.7%;
-  bottom: 0;
-  width: 35%;
-  height: 14%;
+  left: 0%;
+  top: 0.5%;
+  width: 37%;
+  height: 15%;
 }
 
 .pins-style-kitchen:hover{
-  opacity: none;
   background-color: grey;
 }
 
 .pins-style-desk{
   left: 57%;
-  top: 19.5%;
-  bottom: 0;
-  width: 26.3%;
-  height: 20.5%;
+  top: 19%;
+  width: 26.5%;
+  height: 21%;
 }
 
 .pins-style-desk:hover{
-  opacity: none;
   background-color: grey;
 }
 
 .pins-style-bookcase{
   left: 89.7%;
-  top: 11%;
+  top: 10%;
   bottom: 0;
   width: 5.8%;
-  height: 18%;
+  height: 18.5%;
 }
 
 .pins-style-bookcase:hover{
-  opacity: none;
   background-color: grey;
 }
 
 .pins-style-stand{
-  left: 87.5%;
-  top: 40.5%;
-  bottom: 0;
+  left: 88%;
+  top: 40.2%;
   width: 6%;
   height: 7%;
-  border-radius: 100%;
 }
 
 .pins-style-stand:hover{
-  opacity: none;
   background-color: grey;
 }
 
@@ -580,7 +582,6 @@ div.spacemap-flag{
   top: 54.5%;
   width: 10%;
   height: 10%;
-  transform: rotate(166deg);
 }
 
 .pins-style-sofa:hover{
@@ -592,11 +593,10 @@ div.spacemap-flag{
   left: 95%;
   bottom: 5.2%;
   width: 7%;
-  height: 54%;
+  height: 55%;
 }
 
 .pins-style-window:hover{
-  opacity: none;
   background-color: grey;
 }
 
@@ -604,12 +604,11 @@ div.spacemap-flag{
   left: 35%;
   width: 48.5%;
   height: 23.5%;
-  bottom: 3%;
-  border-radius: 12px;
+  bottom: 2.5%;
+  border-radius: 7px;
 }
 
 .pins-style-bed:hover{
-  opacity: none;
   background-color: grey;
 }
 
@@ -621,13 +620,12 @@ div.spacemap-flag{
 }
 
 .pins-style-closet:hover{
-  opacity: none;
   background-color: grey;
 }
 
 .pins-style-toilet{
-  left: 22.6%;
-  bottom: 3%;
+  left: 22%;
+  bottom: 2.5%;
   width: 6.5%;
   height: 12%;
   border-radius: 50% 50% 0 0%;
@@ -639,126 +637,75 @@ div.spacemap-flag{
 }
 
 .pins-style-sink{
-  left: 2.8%;
+  left: 1%;
   top: 66%;
-  width: 6.6%;
+  width: 7.5%;
   height: 12%;
 }
 
 .pins-style-sink:hover{
-  opacity: none;
   background-color: grey;
 }
 
 .pins-style-shower{
-  left: 2.8%;
-  bottom: 2.8%;
-  width: 15.8%;
-  height: 16.5%;
+  left: 1%;
+  bottom: 2.5%;
+  width: 16.8%;
+  height: 16.8%;
 }
 
 
 #rightcol { 
-  background-color: blue;
   display: inline;
   margin-left: auto;
   margin-right: auto;
-  top: 60%;
-  height: 30%;
+  top: 37%;
+  height: 55%;
   width: 100%;
-  border-left: solid 10px black;
-  border-right: solid 10px black;
-  border-top: solid 10px black;
+  border-left: solid 8px black;
+  border-right: solid 8px black;
+  border-top: solid 8px black;
   float: left;
 }
 
 #rightcol p{
-  padding: 0;
-  margin: 0;
   margin-left: 2%;
-  margin-top: 2%;
   margin-right: 2%;
-  padding-bottom: 2%;
-  font-family: inconsolata;
   font-size: 0.8em;
   line-height: 110%;
   border-bottom: 2px dashed; #000;
 }
 
-#rightcol .box {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  padding-top: 1%;
-  padding-bottom: 2%;
-  padding-left: 2%;
-  padding-right: 2%;
-  border-bottom: 1px solid #000;
-  list-style-type: none;
-  text-decoration: none; 
-}
-
-#rightcol .box a{
-  text-decoration: none;
-}
-
 #rightcol .box a c {
-  font-family: arial;
-  font-weight: bold;
-  font-size: 0.7em;
-  color: white;
-  background-color: black;
-  padding: 2px;
+  font-size: 0.6em;
 }
 
 #rightcol .box a t {
-  font-family: arial;
   font-weight: normal;
-  font-size: 0.9em;
-  text-align: left;
 }
-
-#rightcol .box:hover{
-  background-color: #CECECE;
-  color: white;
-}
-
-#rightcol .box a t:hover{
-  color: black;
-}
-
 
 #footer {
-  position: fixed;
-  width: 100%;
-  height: 10%;
+  height: 8%;
   bottom: 0;
   padding: 1%;
   border-top: 1px solid #242F24;
   background-color: black;
-  column-count: 4;
+  column-count: 3;
+  column-gap: 1px;
   text-align: left;
 }
 
 #footer p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: arial;
-  font-weight: bold;
-  font-size: 0.7em;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  font-weight: normal;
+  font-size: 0.4em;
   color: #CECECE;
-
-}
-
-#footer i {
-  font-style: italic;
 }
 
 #footer a{
   font-weight: normal;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
 }
 
 }
