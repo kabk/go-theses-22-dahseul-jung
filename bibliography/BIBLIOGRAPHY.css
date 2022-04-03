@@ -35,7 +35,9 @@ body {
   margin-left: calc(19% + 1px);
   border-left: 1px solid black;
   padding: 0;
-  padding-bottom: 8%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 10%;
   margin-left: 2%;
   columns: 2;
 }
@@ -68,20 +70,20 @@ body {
 }
 
 #content .maintext {
-  padding: 0%;
-  margin-left: 3%;
-  margin-right: 3%;
-  padding-left: 6%;
-  padding-right: 2%;
+  margin-left: 6%;
+  margin-right: 2%;
   padding-bottom: 10%;
+  word-break: break-all;
 }
 
 #content .maintext ol{
+  position: relative;
   font-family: inconsolata;
 }
 
 #content .maintext ol p{
   font-family: arial;
+  padding-right: 10%;
   font-size: 0.9em;
 }
 
@@ -163,37 +165,41 @@ body {
 
 
 #content {
-  border-left: 5px solid black;
+  padding: 2%;
+  border-left: 1px solid black;
   columns: 1;
 }
 
 #content .banner {
-  padding: 1%;
-  padding-bottom: 2%;
+  padding: 2%;
+  padding-bottom: 8%;
 }
 
-#content .banner p{
+#content .banner a{
   text-align: left;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1em;
-  margin-top: 0.8em;
+  margin-top: 1em;
   cursor: grab;
 }
 
-#content .banner i{
-  text-align: left;
-  font-size: 0.4em;
-}
-
 #content .maintext {
-  padding-left: 5%;
-  padding-right: 3%;
+  word-break: break-all;
+  padding: 5%;
 }
 
 #content .maintext p{
   font-size: 0.9em;
 }
 
+#sidebar {
+  width: 20%;
+  height: 100%; 
+  top: 0;
+  left: 0;
+  padding: 0;
+  float: left;
+}
 
 #sidebar .back{
   visibility: hidden;
