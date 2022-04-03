@@ -704,26 +704,28 @@ div.spacemap-flag{
 
 #footer {
   height: 8%;
-  bottom: 0;
-  padding: 1%;
-  border-top: 1px solid #242F24;
-  background-color: black;
-  column-count: 3;
-  column-gap: 1px;
-  text-align: left;
+  padding: 2%;
+  overflow: scroll;
 }
 
 #footer p {
-  margin-top: 2%;
-  margin-left: 2%;
-  margin-bottom: 1%;
+  text-align: left;
   font-weight: normal;
-  font-size: 0.4em;
-  color: #CECECE;
+  font-size: 0.5em;
+
+}
+
+#footer i {
+  font-style: italic;
+  font-weight: normal;
+  color: white;
 }
 
 #footer a{
   font-weight: normal;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 
 }
