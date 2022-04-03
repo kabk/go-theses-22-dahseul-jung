@@ -322,7 +322,6 @@ Navigation Bar - Right hand side
   top: 0;
   left: 0;
   padding: 0;
-  margin-right: 0.3%;
   border-left: 10px solid #000;
   border-right: 10px solid #000;
   float: right;
@@ -677,7 +676,7 @@ div.spacemap-flag{
   padding-right: 3%;
   margin-left: auto;
   margin-right: auto;
-  top: 48%;
+  top: 44%;
   height: 44%;
   width: 100%;
   border: solid 8px black;
@@ -699,19 +698,23 @@ div.spacemap-flag{
 }
 
 #rightcol .box a t {
-  font-weight: normal;
+  font-size: 0.7em;
+  font-weight: bold;
 }
 
 #footer {
-  height: 8%;
+  height: 12%;
   padding: 2%;
-  overflow: scroll;
+  overflow-x: scroll;
+  column-gap: 0.3em;
+  column-count: 2;
 }
 
 #footer p {
   text-align: left;
   font-weight: normal;
   font-size: 0.5em;
+  text-align: center;
 
 }
 
