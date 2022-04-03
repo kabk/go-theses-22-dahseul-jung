@@ -322,7 +322,9 @@ Navigation Bar - Right hand side
   top: 0;
   left: 0;
   padding: 0;
+  margin-right: 0.3%;
   border-left: 10px solid #000;
+  border-right: 10px solid #000;
   float: right;
 }
 
@@ -388,28 +390,33 @@ a:visited{
 
 #footer {
   position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 8%;
-  bottom: 0;
   padding: 1%;
   border-top: 1px solid #242F24;
   background-color: black;
-  column-count: 4;
+  column-count: 3;
   text-align: left;
+  text-align: start;
 }
 
 #footer p {
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: arial;
   font-weight: bold;
-  font-size: 0.7em;
-  color: #CECECE;
+  font-size: 0.6em;
+  color: white;
+  line-height: 1.5em;
 
 }
 
 #footer i {
   font-style: italic;
+  color: white;
 }
 
 #footer a{
