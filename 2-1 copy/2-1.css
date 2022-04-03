@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Inconsolata"), url("http://themes.googleusercontent.com/static/fonts/inconsolata/v3/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html, body { height: 100% }
+div { position: relative }
+body > div {
+  height: 100%;
+  margin:0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+}
+
+#wrapper{
+  counter-reset: footnotes;
+}
+
+#main{
+  display: flex;
+}
+
+#sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin-top: 1em;
+  padding: 1.5em;
+  width: 20%;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+#sidebar .back{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 4%;
+  border-bottom: dashed 1.3px black;
+  padding-top: 0.5em;
+  float: center;
+  font-family:  arial;
+  font-size: 1em;
+  text-align: center;
+}
+
+#sidebar .back a{
+  padding: 1px;
+  text-decoration: none;
+  color: black;
+}
+
+#sidebar .back:hover{
+  background: black;
+  color: white;
+}
+
+#sidebar .back a:hover{
+  color: white;
+}
+
+#sidebar img{
+  position: relative;
+  display: block;
+  padding-top: 1em;
+  float: left;
+  width: 100%;
+}
+
+#sidebar .name{
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 1em;
+  font-family: inconsolata;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+
+#content {
+  padding: 1%; 
+  padding-bottom: 7em;
+  border-left: 10px solid black;
+  columns: 2;
+  column-gap: 1px;
+  overflow-y: scroll;
+}
+
+.title {
+  display: block;
+  column-span: none;
+  column-span: all;
+  text-align: center;
+  font-family: arial;
+  font-size: 3em;
+  padding-top: 0.3em;
+  margin-bottom: 1.6em;
+  margin-left: 2em;
+  margin-right: 2em;
+  cursor: grab;
+}
+
+.title i{
+  display: inline-block;
+  column-span: none;
+  column-span: all;
+  text-align: center;
+  font-family: inconsolata;
+  font-style: normal;
+  font-size: 0.4em;
+}
+
+.maintext {
+  padding: 3px;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+  margin-right: 0.5em;
+  font-family: Times New Roman;
+  font-size: 1.6em;
+  line-height: 1.3;
+}
+
+.maintext f{
+  font-family: inconsolata;
+  font-style: normal;
+  font-size: 0.6em;
+  line-height: 2;
+}
+
+.maintext i{
+  font-style: italic;
+}
+
+.maintext r {
+   display: inline-block;
+   padding-right: 2em;
+   width: 100%;
+   margin-left: 3em;
+   font-family: inconsolata;
+   font-style: normal;
+   font-size: 0.5em;
+   line-height: 130%;
+}
+.maintext r i {
+  font-style: italic;
+}
+
+#footer {
+  border-top: 1px solid #242F24;
+  padding: 2em;
+  font-size: 0.8em;
+}
+
+#footer ol{
+  font-family: inconsolata;
+  font-weight: normal;
+  font-size: 1.3em;
+  padding-left: 20%;
+}
+
+
+[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+}
+
+
+[aria-describedby="footnote-label"]::after {
+  content: '[' counter(footnotes) ']'; /* 1 */
+  vertical-align: super; /* 2 */
+  font-family: inconsolata;
+  font-weight: normal;
+  font-size: 0.8em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: #E40000; /* 5 */
+  /* 5 */
+  cursor: pointer; /* 5 */
+}
+
+[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+[aria-label="Back to content"] {
+  font-family: inconsolata;
+  font-style: normal;
+}
+
+
+#footer :target {
+  background: #E40000;;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+

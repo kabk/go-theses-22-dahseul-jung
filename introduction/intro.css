@@ -118,16 +118,17 @@ body {
 
 #sidebar .back t{
   font-family:  arial;
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   color: black;
 }
 
 #sidebar .back:hover{
-  background-color: #D2D2D2;
+  background-color: black;
 }
+
 #sidebar .back t:hover{
-  color:  red;
+  color:  white;
 }
 
 
