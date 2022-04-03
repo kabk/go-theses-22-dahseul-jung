@@ -356,7 +356,7 @@ Navigation Bar - Right hand side
   text-decoration: none;
 }
 
-#rightcol .box a c {
+#rightcol .box a c{
   font-family: arial;
   font-weight: bold;
   font-size: 0.7em;
@@ -365,7 +365,7 @@ Navigation Bar - Right hand side
   padding: 2px;
 }
 
-#rightcol .box a t {
+#rightcol .box a t{
   font-family: arial;
   font-weight: normal;
   font-size: 0.9em;
@@ -379,6 +379,11 @@ Navigation Bar - Right hand side
 
 #rightcol .box a t:hover{
   color: black;
+}
+
+a:visited{
+  color: yellowgreen;
+  text-decoration: none;
 }
 
 #footer {

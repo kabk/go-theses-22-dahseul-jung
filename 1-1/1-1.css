@@ -30,39 +30,36 @@ body {
 
 #content {
   position: relative;
-  overflow-y: scroll;
   width: 80%;
   height: 100%;
   margin-left: calc(19% + 1px);
   border-left: 8px solid black;
   padding: 0;
-  padding-bottom: 20%;
   margin-bottom: 10%;
   margin-left: 2%;
   columns: 2;
-
 }
 
 #content .banner {
   position: relative;
   column-span: none;
   column-span: all;
-  padding: 1%;
-  padding-bottom: 2%;
+  padding: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-bottom: 8%;
+  text-align: center;
 }
 
-#content .banner p{
-  text-align: center;
+#content .banner a{
   font-family: arial;
   font-size: 3em;
-  margin-top: 0.3em;
-  margin-bottom: 1.6em;
-  margin-left: 1em;
-  margin-right: 1em;
+  text-decoration: none;
+  color: black;
   cursor: grab;
 }
 
-#content .banner i{
+#content .banner a i{
   display: inline-block;
   text-align: center;
   font-family: inconsolata;
@@ -250,21 +247,21 @@ body {
 }
 
 #content .banner {
-  padding: 1%;
-  padding-bottom: 2%;
+  padding: 2%;
+  padding-bottom: 8%;
 }
 
-#content .banner p{
+#content .banner a{
   text-align: left;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1em;
-  margin-top: 0.8em;
+  margin-top: 1em;
   cursor: grab;
 }
 
-#content .banner i{
+#content .banner a i{
   text-align: left;
-  font-size: 0.4em;
+  font-size: 0.5em;
 }
 
 #content .maintext {
